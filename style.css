@@ -1,0 +1,206 @@
+@font-face {
+    font-family: main-font;
+    src: url('./Oswald-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #FAF5EB;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 48px;
+}
+
+nav .logo {
+    width: 180px;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.search-box {
+    border: 2px solid gray;
+    padding: 12px 24px;
+    border-radius: 48px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-box span i {
+    color: orange;
+    font-size: 24px;
+}
+
+.search-box input {
+    border: none;
+    background-color: #FAF5EB;
+}
+
+.search-box input::placeholder {
+    color: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.search-box input:focus {
+    border: none;
+    outline: none;
+}
+
+.line {
+    width: 2px;
+    height: 24px;
+    background: gray;
+}
+
+.cart i {
+    font-size: 24px;
+    color: black;
+}
+
+.cart-count {
+    position: absolute;
+    background-color: #d02a35;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    padding: 2px 8px;
+    top: 12px;
+    right: 52px;
+
+}
+
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-heading {
+    width: 100%;
+    padding: 48px 72px;
+}
+
+.tag-ingredients {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 6px 12px;
+    background-color: #E9ECD8;
+    border-radius: 48px;
+    gap: 4px;
+    border: 1px solid #60912A;
+}
+
+.tag-ingredients h6, i {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #60912A;
+}
+
+.main-heading .heading h1{
+    font-family: main-font;
+    font-weight: 500;
+    line-height: 72px;
+    margin: 32px 0px;
+    font-size: 64px;
+}
+
+.main-heading .heading h1 span {
+    color: #21521E;
+}
+
+.main-heading .sub-heading {
+    font-family: sans-serif;
+    line-height: 24px;
+    color: #6f6d6b;
+}
+
+.cart-plus-minus-button {
+    display: flex;
+    margin-top: 24px;
+    justify-content: space-between;
+    align-items: center;
+    width: 360px;
+}
+
+.add-to-cart-button {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 4px;
+    border: none;
+    border-radius: 48px;
+}
+
+.add-to-cart-button span i {
+    font-size: 18px;
+    color: black;
+    background-color: #FCCB66;
+    padding: 8px;
+    border: none;
+    border-radius: 48px;
+}
+
+.add-to-cart-button div {
+    font-family: main-font;
+    padding: 6px 20px;
+    color: white;
+}
+
+.inc-dec-button {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid grey;
+    padding: 4px 8px;
+    border-radius: 48px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05),
+                0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.inc-dec-button span {
+    padding: 4px 6px;
+    font-size: 18px;
+}
+
+
+.image {
+    width: 100%;
+    background-color: violet;
+}
