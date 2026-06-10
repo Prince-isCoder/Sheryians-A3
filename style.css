@@ -37,8 +37,16 @@ nav .logo {
     width: 180px;
 }
 
-nav .logo img {
-    width: 100%;
+nav .logo .logo1 {
+    width: 150px;
+    transform: rotate(-4deg);
+}
+
+nav .logo .logo-top {
+    width: 80px;
+    position: absolute;
+    left: -10px;
+    transform: rotate(-20deg);
 }
 
 .nav-links {
@@ -46,8 +54,16 @@ nav .logo img {
     gap: 24px;
 }
 
+
+.nav-links img {
+    width: 100px;
+    position: relative;
+    left: -76px;
+    bottom: -30px;
+}
+
 .nav-links a {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: main-font;
     text-decoration: none;
     color: black;
 }
@@ -138,8 +154,13 @@ nav .logo img {
     font-family: main-font;
     font-weight: 500;
     line-height: 72px;
-    margin: 32px 0px;
+    margin-top: 32px;
     font-size: 64px;
+}
+
+.main-heading .heading .underline img{
+    width: 180px;
+    margin-bottom: 12px;
 }
 
 .main-heading .heading h1 span {
@@ -199,8 +220,201 @@ nav .logo img {
     font-size: 18px;
 }
 
+.tags-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 12px;
+    margin: 32px 0px;
+}
+
+.tag {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.leaf-img span img {
+    width: 36px;
+    border: 1px solid #40C057;
+    border-radius: 48px;
+    padding: 8px;
+}
+
+
+.leaf-txt h6{
+    font-family: main-font;
+    margin: 2px 0px;
+}
+
+.leaf-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: #93918A;
+}
+
+.fire-img span img {
+    width: 36px;
+    border: 1px solid #F29D29;
+    border-radius: 48px;
+    padding: 8px;
+}
+
+.fire-txt h6{
+    font-family: main-font;
+    margin: 2px 0px;
+}
+
+
+.fire-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: #93918A;
+}
+
+.heart-img span img {
+    width: 36px;
+    border: 1px solid #D32F2F;
+    border-radius: 48px;
+    padding: 8px;
+}
+
+
+.heart-txt h6{
+    font-family: main-font;
+    margin: 2px 0px;
+}
+
+.heart-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    color: #93918A;
+}
 
 .image {
     width: 100%;
-    background-color: violet;
+    left: -200px;
+    position: relative;
+}
+
+.image .image-section {
+    width: 100%;
+    padding: 48px 72px;
+    gap: 32px;
+    display: flex;
+}
+
+.tooYumm-img {
+    transform: rotate(-6deg);
+    position: relative;
+}
+
+.veggie-stix {
+    width: 400px;
+}
+
+.sticker-img {
+    position: absolute;
+    width: 50%;
+    /* height: 100%; */
+    /* background-color: black; */
+    left: -20%;
+    top: 30%;
+}
+
+.chilli-fire-meat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.chilli-fire-meat-container div {
+    margin: 12px 0px;
+}
+
+.chilli-fire-meat-container div img {
+    width: 32px;
+}
+
+.chilli-container {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+.chilli-container .chilli-bg img {
+    width: 50px;
+    height: 50px;
+    background-color: #1C653F;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.chilli-container .chilli-text h6 {
+    font-family: main-font;
+    font-size: 16px;
+}
+
+.chilli-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #A09E9C;
+    width: 150px;
+}
+
+
+.meat-container {
+    display: flex;
+    gap: 12px;
+}
+
+.meat-container .meat-bg img{
+    background-color: #DA2330;
+    border-radius: 48px;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+}
+
+.meat-container .meat-text h6 {
+    font-family: main-font;
+    font-size: 16px;
+}
+
+.meat-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #A09E9C;
+    width: 180px;
+}
+
+.fire-container {
+    display: flex;
+    gap: 12px;
+}
+
+.fire-container .fire-bg img{
+    background-color: #F7B12F;
+    border-radius: 48px;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+}
+
+.fire-container .fire-text h6 {
+    font-family: main-font;
+    font-size: 16px;
+}
+
+.fire-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #A09E9C;
+    width: 150px;
 }
