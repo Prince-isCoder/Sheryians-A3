@@ -16,13 +16,11 @@ html, body {
 
 main {
     width: 100%;
-    height: 100%;
     background-color: #FAF5EB;
 }
 
 section {
     width: 100%;
-    height: 100%;
 }
 
 nav {
@@ -131,7 +129,7 @@ nav .logo .logo-top {
 
 .main-heading {
     width: 100%;
-    padding: 48px 72px;
+    padding: 48px 48px;
 }
 
 .tag-ingredients {
@@ -145,21 +143,29 @@ nav .logo .logo-top {
     border: 1px solid #60912A;
 }
 
-.tag-ingredients h6, i {
+.tag-ingredients span i {
     font-family: Arial, Helvetica, sans-serif;
     color: #60912A;
 }
 
+.tag-ingredients h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #60912A;
+    font-size: 12px;
+    font-weight: 100;
+}
+
 .main-heading .heading h1{
     font-family: main-font;
-    font-weight: 500;
-    line-height: 72px;
+    font-weight: 450;
+    line-height: 96px;
     margin-top: 32px;
-    font-size: 64px;
+    font-size: 88px;
+    /* background-color: navajowhite; */
 }
 
 .main-heading .heading .underline img{
-    width: 180px;
+    width: 350px;
     margin-bottom: 12px;
 }
 
@@ -221,92 +227,134 @@ nav .logo .logo-top {
 }
 
 .tags-container {
-    width: 100%;
+    width: 110%;
     height: fit-content;
     display: flex;
-    gap: 12px;
+    gap: 6px;
+    /* background-color: rosybrown; */
     margin: 32px 0px;
 }
 
 .tag {
     padding: 12px;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.leaf-img span img {
-    width: 36px;
+.leaf-img div {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
     border: 1px solid #40C057;
     border-radius: 48px;
-    padding: 8px;
+}
+
+.leaf-img div img {
+    width: 36px;
+}
+
+.leaf-txt {
+    width: 150%;
 }
 
 
 .leaf-txt h6{
     font-family: main-font;
     margin: 2px 0px;
+    font-size: 16px;
 }
 
 .leaf-txt p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     color: #93918A;
 }
 
-.fire-img span img {
-    width: 36px;
-    border: 1px solid #F29D29;
-    border-radius: 48px;
+.fire-img div {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 8px;
+    border-radius: 48px;
+    border: 1px solid #F29D29;
+}
+
+.fire-img div img {
+    width: 36px;
+}
+
+.fire-text {
+    width: 150%;
 }
 
 .fire-txt h6{
     font-family: main-font;
     margin: 2px 0px;
+    font-size: 16px;
 }
 
 
 .fire-txt p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     color: #93918A;
 }
 
-.heart-img span img {
-    width: 36px;
+
+.heart-img div {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
     border: 1px solid #D32F2F;
     border-radius: 48px;
-    padding: 8px;
 }
 
+.heart-img div img {
+    width: 36px;
+}
+
+.heart-txt {
+    width: 150px;
+}
 
 .heart-txt h6{
     font-family: main-font;
     margin: 2px 0px;
+    font-size: 16px;
 }
 
 .heart-txt p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     color: #93918A;
 }
 
 .image {
     width: 100%;
-    left: -200px;
-    position: relative;
 }
+
 
 .image .image-section {
     width: 100%;
     padding: 48px 72px;
     gap: 32px;
     display: flex;
+    position: relative;
 }
+
 
 .tooYumm-img {
     transform: rotate(-6deg);
@@ -417,4 +465,148 @@ nav .logo .logo-top {
     font-size: 12px;
     color: #A09E9C;
     width: 150px;
+}
+
+.flavours-section {
+    background-color: #1C5C30;
+    border-radius: 20px;
+    margin: 0 48px 40px 48px;
+    padding: 28px 36px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow: hidden;
+}
+
+.flavours-heading {
+    min-width: 140px;
+    align-self: center;
+}
+
+.flavours-heading h3 {
+    font-family: main-font;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.flavours-heading .underline-yellow {
+    width: 60px;
+    height: 3px;
+    background: #FCCB66;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.flavours-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.flavours-nav button {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.flavours-cards {
+    display: flex;
+    gap: 16px;
+    flex: 1;
+}
+
+.flavour-card {
+    background: white;
+    border-radius: 14px;
+    padding: 12px 16px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1;
+    min-width: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow: visible;
+    margin-top: 40px;
+}
+
+.flavour-card img {
+    width: 120px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: -70px;
+    align-self: center;
+}
+
+.flavour-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.flavour-info h5 {
+    font-family: main-font;
+    font-size: 14px;
+    color: #111;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin: 2px;
+}
+
+.flavour-stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.flavour-stars span img{
+    width: 70px;
+}
+
+.flavour-stars small {
+    color: #888;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+}
+
+.flavour-price {
+    margin-top: 4px;
+    font-family: main-font;
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 8px !important;
+}
+
+.order-btn {
+    background: #d02a35;
+    color: white;
+    border: none;
+    border-radius: 48px;
+    padding: 7px 14px;
+    font-family: main-font;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.order-btn:hover {
+    background: #b71c1c;
 }
